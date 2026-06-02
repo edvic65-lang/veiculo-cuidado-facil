@@ -230,9 +230,6 @@ function Index() {
           <Button size="lg" className="mt-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)]">
             Comprar por R$ 9,99
           </Button>
-          <Button size="lg" variant="outline" className="rounded-full border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white">
-                Saiba Tudo
-          </Button>            
         </div>
       </section>
 
