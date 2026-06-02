@@ -58,7 +58,7 @@ const testimonials = [
   },
   {
     name: "Camila S.",
-    role: "Dona de uma frota de motos",
+    role: "Dona de um carro e uma moto",
     text: "Finalmente um app que entende quem tem mais de um veículo. Vendi uma moto pelo preço cheio mostrando o histórico!",
   },
 ];
