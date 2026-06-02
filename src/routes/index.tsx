@@ -17,10 +17,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MotorCare — Gestão de manutenção do seu veículo" },
-      { name: "description", content: "Controle revisões, gastos e alertas de carros, motos e caminhões. Economize com manutenção preventiva e valorize seu veículo na revenda." },
-      { property: "og:title", content: "MotorCare — Gestão de manutenção veicular" },
-      { property: "og:description", content: "Nunca mais esqueça uma troca de óleo. Alertas de revisão, IPVA e multas na palma da mão." },
+      { title: "iServCar — Gestão de manutenção do seu veículo" },
+      { name: "description", content: "Controle revisões, gastos e alertas de carros, motos e caminhões. Ideal para motoristas de aplicativo. Economize com manutenção preventiva e valorize seu veículo na revenda." },
+      { property: "og:title", content: "iServCar — Gestão de manutenção veicular" },
+      { property: "og:description", content: "Nunca mais esqueça uma troca de óleo. Alertas de revisão e manutenção na palma da mão." },
     ],
   }),
   component: Index,
@@ -35,7 +35,7 @@ const benefits = [
   {
     icon: BellRing,
     title: "Alertas inteligentes",
-    desc: "Receba avisos de troca de peças, vencimento de IPVA, licenciamento e multas antes que vire dor de cabeça.",
+    desc: "Receba avisos de troca de óleo, filtros, pastilhas de freio e demais serviços antes que virem dor de cabeça.",
   },
   {
     icon: TrendingUp,
@@ -46,8 +46,8 @@ const benefits = [
 
 const steps = [
   { icon: Car, title: "Cadastre seu veículo", desc: "Adicione carro, moto ou caminhão em segundos." },
-  { icon: Receipt, title: "Registre seus gastos", desc: "Combustível, peças, serviços — tudo organizado." },
-  { icon: BellRing, title: "Receba alertas", desc: "Saiba a hora certa de cada revisão e pagamento." },
+  { icon: Receipt, title: "Registre seus gastos", desc: "Peças, serviços e revisões — tudo organizado." },
+  { icon: BellRing, title: "Receba alertas", desc: "Saiba a hora certa de cada revisão e manutenção." },
 ];
 
 const testimonials = [
