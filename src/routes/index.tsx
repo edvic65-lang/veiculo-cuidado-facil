@@ -229,10 +229,10 @@ function Index() {
             Comece a economizar hoje
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/80">
-            Baixe o MotorCare e tenha o controle completo da manutenção do seu veículo — sem custo para começar.
+            Baixe o iServCar e tenha o controle completo da manutenção do seu veículo por apenas R$ 9,99.
           </p>
           <Button size="lg" className="mt-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)]">
-            Teste Grátis
+            Comprar por R$ 9,99
           </Button>
         </div>
       </section>
@@ -242,7 +242,7 @@ function Index() {
         <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-6 md:flex-row">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-5 w-5 text-primary" />
-            <span className="font-semibold">MotorCare</span>
+            <span className="font-semibold">iServCar</span>
             <span className="text-sm text-muted-foreground">© {new Date().getFullYear()}</span>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
