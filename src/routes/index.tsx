@@ -17,10 +17,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MotorCare — Gestão de manutenção do seu veículo" },
-      { name: "description", content: "Controle revisões, gastos e alertas de carros, motos e caminhões. Economize com manutenção preventiva e valorize seu veículo na revenda." },
-      { property: "og:title", content: "MotorCare — Gestão de manutenção veicular" },
-      { property: "og:description", content: "Nunca mais esqueça uma troca de óleo. Alertas de revisão, IPVA e multas na palma da mão." },
+      { title: "iServCar — Gestão de manutenção do seu veículo" },
+      { name: "description", content: "Controle revisões, gastos e alertas de carros, motos e caminhões. Ideal para motoristas de aplicativo. Economize com manutenção preventiva e valorize seu veículo na revenda." },
+      { property: "og:title", content: "iServCar — Gestão de manutenção veicular" },
+      { property: "og:description", content: "Nunca mais esqueça uma troca de óleo. Alertas de revisão e manutenção na palma da mão." },
     ],
   }),
   component: Index,
@@ -35,7 +35,7 @@ const benefits = [
   {
     icon: BellRing,
     title: "Alertas inteligentes",
-    desc: "Receba avisos de troca de peças, vencimento de IPVA, licenciamento e multas antes que vire dor de cabeça.",
+    desc: "Receba avisos de troca de óleo, filtros, pastilhas de freio e demais serviços antes que virem dor de cabeça.",
   },
   {
     icon: TrendingUp,
@@ -46,8 +46,8 @@ const benefits = [
 
 const steps = [
   { icon: Car, title: "Cadastre seu veículo", desc: "Adicione carro, moto ou caminhão em segundos." },
-  { icon: Receipt, title: "Registre seus gastos", desc: "Combustível, peças, serviços — tudo organizado." },
-  { icon: BellRing, title: "Receba alertas", desc: "Saiba a hora certa de cada revisão e pagamento." },
+  { icon: Receipt, title: "Registre seus gastos", desc: "Peças, serviços e revisões — tudo organizado." },
+  { icon: BellRing, title: "Receba alertas", desc: "Saiba a hora certa de cada revisão e manutenção." },
 ];
 
 const testimonials = [
@@ -71,7 +71,7 @@ function Index() {
         <div className="container mx-auto flex items-center justify-between px-6 py-5">
           <div className="flex items-center gap-2 text-primary-foreground">
             <ShieldCheck className="h-6 w-6" />
-            <span className="text-lg font-bold tracking-tight">MotorCare</span>
+            <span className="text-lg font-bold tracking-tight">iServCar</span>
           </div>
           <Button variant="secondary" size="sm" className="rounded-full font-semibold">
             Baixe Agora
@@ -88,7 +88,7 @@ function Index() {
         <div className="container relative mx-auto grid gap-12 px-6 lg:grid-cols-2 lg:items-center">
           <div className="text-primary-foreground">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
-              <ShieldCheck className="h-3.5 w-3.5" /> Mais de 50 mil veículos cuidados
+              <ShieldCheck className="h-3.5 w-3.5" /> Ideal para motoristas de app
             </span>
             <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
               Nunca mais esqueça uma troca de óleo.
@@ -97,14 +97,14 @@ function Index() {
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/80">
-              Controle revisões, gastos e alertas de carros, motos e caminhões. Economize com manutenção preventiva e evite surpresas com a mecânica.
+              Controle revisões, gastos e alertas de carros, motos e caminhões. Perfeito para motoristas de aplicativo. Economize com manutenção preventiva e evite surpresas com a mecânica.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)]">
-                Teste Grátis
+                Comprar por R$ 9,99
               </Button>
               <Button size="lg" variant="outline" className="rounded-full border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white">
-                Baixe Agora
+                Saiba Mais
               </Button>
             </div>
             <div className="mt-8 flex items-center gap-2 text-sm text-white/70">
@@ -120,7 +120,7 @@ function Index() {
             <div className="absolute inset-0 -z-10 mx-auto h-[420px] w-[420px] rounded-full bg-primary-glow/40 blur-3xl" />
             <img
               src={appMockup}
-              alt="Mockup do aplicativo MotorCare em um smartphone"
+              alt="Mockup do aplicativo iServCar em um smartphone"
               width={1024}
               height={1024}
               className="w-full max-w-md drop-shadow-2xl"
@@ -229,10 +229,10 @@ function Index() {
             Comece a economizar hoje
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/80">
-            Baixe o MotorCare e tenha o controle completo da manutenção do seu veículo — sem custo para começar.
+            Baixe o iServCar e tenha o controle completo da manutenção do seu veículo por apenas R$ 9,99.
           </p>
           <Button size="lg" className="mt-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)]">
-            Teste Grátis
+            Comprar por R$ 9,99
           </Button>
         </div>
       </section>
@@ -242,7 +242,7 @@ function Index() {
         <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-6 md:flex-row">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-5 w-5 text-primary" />
-            <span className="font-semibold">MotorCare</span>
+            <span className="font-semibold">iServCar</span>
             <span className="text-sm text-muted-foreground">© {new Date().getFullYear()}</span>
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
