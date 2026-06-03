@@ -35,7 +35,7 @@ const benefits = [
   {
     icon: BellRing,
     title: "Alertas inteligentes",
-    desc: "Receba avisos de troca de óleo, filtros, pastilhas de freio e demais serviços antes que virem dor de cabeça.",
+    desc: "Receba avisos de troca de óleo, correia dentada, filtros, pastilhas de freio e demais serviços antes que virem dor de cabeça.",
   },
   {
     icon: TrendingUp,
