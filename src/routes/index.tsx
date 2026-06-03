@@ -101,8 +101,9 @@ function Index() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button size="lg" className="h-auto py-4 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)] text-center leading-tight">
-                comprar<br />por R$ 9,99
+                Comprar<br />por R$ 9,99
               </Button> 
+
 
             </div>
             <div className="mt-8 flex items-center gap-2 text-sm text-white/70">
@@ -230,8 +231,9 @@ function Index() {
             Baixe o iServCar agora e tenha o acesso vitalício para o controle completo da manutenção de até dois veículos por apenas R$ 9,99.
           </p>
           <Button size="lg" className="mt-8 h-auto py-4 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)] text-center leading-tight">
-            comprar<br />por R$ 9,99
+            Comprar<br />por R$ 9,99
           </Button>
+
 
         </div>
       </section>
