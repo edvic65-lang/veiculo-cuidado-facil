@@ -109,7 +109,7 @@ function Index() {
                   <Star key={i} className="h-4 w-4 fill-accent text-accent" />
                 ))}
               </div>
-              <span>4.9 / 5 — avaliação na App Store e Play Store</span>
+              <span>4.9 / 5 — avaliação na Play Store</span>
             </div>
           </div>
           <div className="relative flex justify-center lg:justify-end">
