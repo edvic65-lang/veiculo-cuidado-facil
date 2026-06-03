@@ -97,7 +97,7 @@ function Index() {
               </span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-white/80">
-              Controle revisões, gastos e alertas de carros, motos e caminhões. Perfeito para motoristas de aplicativo. Economize com manutenção preventiva e evite surpresas com a mecânica.
+              Controle revisões, gastos e tenha alertas para manutenção de carros, motos e caminhões. Perfeito para motoristas de aplicativo e taxistas. Economize com manutenção preventiva e evite surpresas com a mecânica.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)]">Comprar por R$ 9,99
