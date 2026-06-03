@@ -225,7 +225,7 @@ function Index() {
             Comece a economizar hoje
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-white/80">
-            Baixe o iServCar agora e tenha o controle completo da manutenção do seu veículo por apenas R$ 9,99.
+            Baixe o iServCar agora e tenha o acesso vitalício para o controle completo da manutenção de até dois veículos por apenas R$ 9,99.
           </p>
           <Button size="lg" className="mt-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)]">
             Comprar por R$ 9,99
