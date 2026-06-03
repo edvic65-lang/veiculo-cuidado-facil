@@ -59,7 +59,7 @@ const testimonials = [
   {
     name: "Camila S.",
     role: "Dona de um carro e uma moto",
-    text: "Finalmente um app que entende quem tem mais de um veículo. Vendi uma moto pelo preço cheio mostrando o histórico!",
+    text: "Finalmente um app simples e objetivo que entende quem tem mais de um veículo. Vendi uma moto pelo preço cheio mostrando o histórico!",
   },
 ];
 
