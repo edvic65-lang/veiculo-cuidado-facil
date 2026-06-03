@@ -47,7 +47,7 @@ const benefits = [
 const steps = [
   { icon: Car, title: "Cadastre seu veículo", desc: "Adicione carro, moto ou caminhão em segundos." },
   { icon: Receipt, title: "Registre seus gastos", desc: "Peças, serviços e revisões — tudo organizado." },
-  { icon: BellRing, title: "Receba alertas", desc: "Saiba a hora certa de cada revisão e manutenção." },
+  { icon: BellRing, title: "Receba alertas", desc: "Saiba o momento certo de cada revisão e manutenção." },
 ];
 
 const testimonials = [
