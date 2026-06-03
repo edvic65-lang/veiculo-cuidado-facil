@@ -54,7 +54,7 @@ const testimonials = [
   {
     name: "Rafael M.",
     role: "Motorista de app",
-    text: "Reduzi meus gastos com oficina em mais de 30%. Os alertas de manutenção preventiva salvaram meu motor.",
+    text: "Reduzi meus gastos com oficina em mais de 30%. Minha única preocupação é dirigir. Os alertas de manutenção preventiva salvaram meu motor.",
   },
   {
     name: "Camila S.",
