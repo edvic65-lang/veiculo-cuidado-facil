@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import appMockup from "@/assets/app-mockup.png";
+import googlePlayBadge from "@/assets/google-play-badge.png";
 import { Button } from "@/components/ui/button";
 import {
   Wrench,
@@ -9,9 +10,6 @@ import {
   Receipt,
   ShieldCheck,
   Star,
-  Instagram,
-  Facebook,
-  Youtube,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -61,6 +59,11 @@ const testimonials = [
     role: "Dona de um carro e uma moto",
     text: "Finalmente um app simples e objetivo que entende quem tem mais de um veículo. Vendi uma moto pelo preço cheio mostrando o histórico!",
   },
+  {
+    name: "Lucas P.",
+    role: "Locador de veículos",
+    text: "Tenho dois carros alugados e antes era difícil saber certo quando teria que fazer uma manutenção, agora o aplicativo me avisa e não tenho com o que me preocupar.",
+  },
 ];
 
 function Index() {
@@ -100,11 +103,14 @@ function Index() {
               Controle revisões, gastos e tenha alertas para manutenção de carros, motos e caminhões. Perfeito para motoristas de aplicativo e taxistas. Economize com manutenção preventiva e evite surpresas com a mecânica.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button size="lg" className="h-auto py-4 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)] text-center leading-tight">
-                Comprar<br />por R$ 9,99
-              </Button> 
-
-
+              <div className="flex flex-col items-start gap-2">
+                <span className="text-base text-white/80 line-through">R$ 14,99</span>
+                <span className="text-4xl font-bold text-accent leading-none">R$ 9,99</span>
+                <span className="text-xs text-white/70">pagamento único — sem mensalidade</span>
+                <Button size="lg" className="mt-2 h-auto py-4 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)] text-center leading-tight">
+                  Comprar por R$ 9,99
+                </Button>
+              </div>
             </div>
             <div className="mt-8 flex items-center gap-2 text-sm text-white/70">
               <div className="flex">
@@ -191,7 +197,7 @@ function Index() {
               Quem usa, recomenda
             </h2>
           </div>
-          <div className="mx-auto mt-14 grid max-w-4xl gap-6 md:grid-cols-2">
+          <div className="mx-auto mt-14 grid max-w-4xl gap-6 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
               <div key={t.name} className="rounded-2xl border bg-card p-8 shadow-[var(--shadow-card)]">
                 <div className="flex">
@@ -231,31 +237,30 @@ function Index() {
             Baixe o iServCar agora e tenha o acesso vitalício para o controle completo da manutenção de até dois veículos por apenas R$ 9,99.
           </p>
           <Button size="lg" className="mt-8 h-auto py-4 rounded-full bg-accent text-accent-foreground hover:bg-accent/90 font-semibold shadow-[var(--shadow-elegant)] text-center leading-tight">
-            Comprar<br />por R$ 9,99
+            Comprar por R$ 9,99
           </Button>
-
-
+          <div className="mt-6 flex flex-col items-center gap-3">
+            <span className="text-sm text-white/80">compra 100% segura via:</span>
+            <a href="#" aria-label="Google Play">
+              <img
+                src={googlePlayBadge}
+                alt="Disponível no Google Play"
+                width={180}
+                height={56}
+                loading="lazy"
+                className="h-14 w-auto"
+              />
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="border-t bg-background py-10">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-6 md:flex-row">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-primary" />
-            <span className="font-semibold">iServCar</span>
-            <span className="text-sm text-muted-foreground">© {new Date().getFullYear()}</span>
-          </div>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground">Termos de uso</a>
-            <a href="#" className="hover:text-foreground">Privacidade</a>
-            <a href="#" className="hover:text-foreground">Contato</a>
-          </div>
-          <div className="flex gap-3 text-muted-foreground">
-            <a href="#" aria-label="Instagram" className="hover:text-primary"><Instagram className="h-5 w-5" /></a>
-            <a href="#" aria-label="Facebook" className="hover:text-primary"><Facebook className="h-5 w-5" /></a>
-            <a href="#" aria-label="YouTube" className="hover:text-primary"><Youtube className="h-5 w-5" /></a>
-          </div>
+        <div className="container mx-auto flex items-center justify-center gap-2 px-6">
+          <ShieldCheck className="h-5 w-5 text-primary" />
+          <span className="font-semibold">iServCar</span>
+          <span className="text-sm text-muted-foreground">© {new Date().getFullYear()}</span>
         </div>
       </footer>
     </div>
