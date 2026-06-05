@@ -10,9 +10,6 @@ import {
   Receipt,
   ShieldCheck,
   Star,
-  Instagram,
-  Facebook,
-  Youtube,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
